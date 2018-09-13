@@ -1,0 +1,84 @@
+\hypertarget{equation__solver_8h}{}\section{D\+:/programming/\+M\+I\+P\+T/diht2018cpp/hw1/equation\+\_\+solver.h File Reference}
+\label{equation__solver_8h}\index{D\+:/programming/\+M\+I\+P\+T/diht2018cpp/hw1/equation\+\_\+solver.\+h@{D\+:/programming/\+M\+I\+P\+T/diht2018cpp/hw1/equation\+\_\+solver.\+h}}
+{\ttfamily \#include $<$cmath$>$}\newline
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{equation__solver_8h_adf764cbdea00d65edcd07bb9953ad2b7ae4c7f7f9f79caf20d1397f3a5d165602}{S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS}} = 1000000007
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Field $>$ }\\int \mbox{\hyperlink{equation__solver_8h_acc4b6e7eda583f0ff99fa2a9650a1a74}{solve\+Linear}} (Field a, Field b, Field \&x)
+\item 
+{\footnotesize template$<$class Field $>$ }\\int \mbox{\hyperlink{equation__solver_8h_ab549c2f82db1539ca03581ec03a148e0}{solve\+Square}} (Field a, Field b, Field c, Field \&x1, Field \&x2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{equation__solver_8h_adf764cbdea00d65edcd07bb9953ad2b7}\label{equation__solver_8h_adf764cbdea00d65edcd07bb9953ad2b7}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS@{S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS}!equation\+\_\+solver.\+h@{equation\+\_\+solver.\+h}}\index{equation\+\_\+solver.\+h@{equation\+\_\+solver.\+h}!S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS@{S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS}}}\mbox{\Hypertarget{equation__solver_8h_adf764cbdea00d65edcd07bb9953ad2b7ae4c7f7f9f79caf20d1397f3a5d165602}\label{equation__solver_8h_adf764cbdea00d65edcd07bb9953ad2b7ae4c7f7f9f79caf20d1397f3a5d165602}} 
+S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{equation__solver_8h_acc4b6e7eda583f0ff99fa2a9650a1a74}\label{equation__solver_8h_acc4b6e7eda583f0ff99fa2a9650a1a74}} 
+\index{equation\+\_\+solver.\+h@{equation\+\_\+solver.\+h}!solve\+Linear@{solve\+Linear}}
+\index{solve\+Linear@{solve\+Linear}!equation\+\_\+solver.\+h@{equation\+\_\+solver.\+h}}
+\subsubsection{\texorpdfstring{solve\+Linear()}{solveLinear()}}
+{\footnotesize\ttfamily template$<$class Field $>$ \\
+int solve\+Linear (\begin{DoxyParamCaption}\item[{Field}]{a,  }\item[{Field}]{b,  }\item[{Field \&}]{x }\end{DoxyParamCaption})}
+
+Solve linear equation ax + b = 0
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em a} & a-\/coefficient \\
+\hline
+\mbox{\tt in}  & {\em b} & b-\/coefficient \\
+\hline
+\mbox{\tt out}  & {\em x} & reference to the root\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of roots
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+If there are infinite number of roots return S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS 
+\end{DoxyNote}
+\mbox{\Hypertarget{equation__solver_8h_ab549c2f82db1539ca03581ec03a148e0}\label{equation__solver_8h_ab549c2f82db1539ca03581ec03a148e0}} 
+\index{equation\+\_\+solver.\+h@{equation\+\_\+solver.\+h}!solve\+Square@{solve\+Square}}
+\index{solve\+Square@{solve\+Square}!equation\+\_\+solver.\+h@{equation\+\_\+solver.\+h}}
+\subsubsection{\texorpdfstring{solve\+Square()}{solveSquare()}}
+{\footnotesize\ttfamily template$<$class Field $>$ \\
+int solve\+Square (\begin{DoxyParamCaption}\item[{Field}]{a,  }\item[{Field}]{b,  }\item[{Field}]{c,  }\item[{Field \&}]{x1,  }\item[{Field \&}]{x2 }\end{DoxyParamCaption})}
+
+Solve square equation ax$^\wedge$2 + bx + c = 0
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em a} & a-\/coefficient \\
+\hline
+\mbox{\tt in}  & {\em b} & b-\/coefficient \\
+\hline
+\mbox{\tt in}  & {\em c} & c-\/coefficient \\
+\hline
+\mbox{\tt out}  & {\em x1} & reference to the first root \\
+\hline
+\mbox{\tt out}  & {\em x2} & reference to the second root\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of roots
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+If there are infinite number of roots return S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS 
+\end{DoxyNote}
