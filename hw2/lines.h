@@ -1,24 +1,56 @@
+//------------------------------------------------------------------------------
+//! Struct line of text: string + length of this string
+//------------------------------------------------------------------------------
+
 struct line {
     char* str;
     size_t len;
+
+    //------------------------------------------------------------------------------
+    //! Construct line with specified length
+    //!
+    //! @param [in]  len length
+    //------------------------------------------------------------------------------
 
     line(int len): len(len) {
         str = new char[len];
     }
 
+    //------------------------------------------------------------------------------
+    //! Construct line from another line
+    //!
+    //! @param [in] a line
+    //------------------------------------------------------------------------------
+
     line(const line& a): len(a.len) {
         str = new char[len];
-        for (size_t i = 0; i < len; ++i) {
-            str[i] = a.str[i];
-        }
+        memcpy(str, a.str, len);
     }
 
 };
+
+
+//------------------------------------------------------------------------------
+//! Check if char is punctuation mark
+//!
+//! @param [in] c character
+//!
+//! @return boolean
+//------------------------------------------------------------------------------
 
 bool is_punctuation_mark(char c) {
     return  c == '.' || c == '?' || c == '!' || c == ',' || c == ':' || c == ';' ||
             c == '(' || c == ')' || c == '\'' || c == '[' || c == ']';
 }
+
+//------------------------------------------------------------------------------
+//! Compare lines a and b from the beginning
+//!
+//! @param [in] a reference to line a
+//! @param [in] b reference to line b 
+//!
+//! @return a < b
+//------------------------------------------------------------------------------
 
 bool line_comp(const line& a, const line& b) {
     size_t b_pos = 0;
@@ -36,6 +68,16 @@ bool line_comp(const line& a, const line& b) {
     }
     return b_pos < b.len;
 }
+
+//------------------------------------------------------------------------------
+//! Compare lines a and b from the end
+//!
+//! @param [in] a reference to line a
+//! @param [in] b reference to line b 
+//!
+//! @return a < b
+//------------------------------------------------------------------------------
+
 
 bool line_rev_comp(const line& a, const line& b) {
     int b_pos = static_cast<int>(b.len) - 1;

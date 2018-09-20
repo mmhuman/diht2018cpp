@@ -1,0 +1,105 @@
+\hypertarget{main_8cpp}{}\section{D\+:/programming/\+M\+I\+P\+T/diht2018cpp/hw2/main.cpp File Reference}
+\label{main_8cpp}\index{D\+:/programming/\+M\+I\+P\+T/diht2018cpp/hw2/main.\+cpp@{D\+:/programming/\+M\+I\+P\+T/diht2018cpp/hw2/main.\+cpp}}
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$sys/stat.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}lines.\+h\char`\"{}}\newline
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{main_8cpp_a06fc87d81c62e9abb8790b6e5713c55ba547b8a0a8b60808b5aa12b6efb7db783}{E\+\_\+\+F\+I\+L\+E\+O\+P\+EN}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{main_8cpp_a2fd0b549ad62aba1f4ffad882420e77c}{read\+\_\+from\+\_\+file}} (char $\ast$filename, char $\ast$$\ast$text)
+\item 
+void \mbox{\hyperlink{main_8cpp_a41ee77af59f0733f5de6ac75d56d65ff}{process\+\_\+book}} (char $\ast$book\+\_\+filename, vector$<$ \mbox{\hyperlink{structline}{line}} $>$ $\ast$text\+\_\+lines)
+\item 
+void \mbox{\hyperlink{main_8cpp_ab8b320b064deb01ad0e5c705d3359143}{print\+\_\+lines}} (const char $\ast$filename, vector$<$ \mbox{\hyperlink{structline}{line}} $>$ $\ast$text\+\_\+lines, bool flag\+\_\+delete\+\_\+empty\+\_\+strings)
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{main_8cpp_a06fc87d81c62e9abb8790b6e5713c55b}\label{main_8cpp_a06fc87d81c62e9abb8790b6e5713c55b}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+\_\+\+F\+I\+L\+E\+O\+P\+EN@{E\+\_\+\+F\+I\+L\+E\+O\+P\+EN}!main.\+cpp@{main.\+cpp}}\index{main.\+cpp@{main.\+cpp}!E\+\_\+\+F\+I\+L\+E\+O\+P\+EN@{E\+\_\+\+F\+I\+L\+E\+O\+P\+EN}}}\mbox{\Hypertarget{main_8cpp_a06fc87d81c62e9abb8790b6e5713c55ba547b8a0a8b60808b5aa12b6efb7db783}\label{main_8cpp_a06fc87d81c62e9abb8790b6e5713c55ba547b8a0a8b60808b5aa12b6efb7db783}} 
+E\+\_\+\+F\+I\+L\+E\+O\+P\+EN&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_ab8b320b064deb01ad0e5c705d3359143}\label{main_8cpp_ab8b320b064deb01ad0e5c705d3359143}} 
+\index{main.\+cpp@{main.\+cpp}!print\+\_\+lines@{print\+\_\+lines}}
+\index{print\+\_\+lines@{print\+\_\+lines}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{print\+\_\+lines()}{print\_lines()}}
+{\footnotesize\ttfamily void print\+\_\+lines (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{vector$<$ \mbox{\hyperlink{structline}{line}} $>$ $\ast$}]{text\+\_\+lines,  }\item[{bool}]{flag\+\_\+delete\+\_\+empty\+\_\+strings }\end{DoxyParamCaption})}
+
+Print lines to filename from text\+\_\+lines. Ignore empty lines if flag\+\_\+delete\+\_\+empty\+\_\+strings == true.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em book\+\_\+filename} & path + file name to text \\
+\hline
+\mbox{\tt in}  & {\em text\+\_\+lines} & pointer to lines of text \\
+\hline
+\mbox{\tt in}  & {\em flag\+\_\+delete\+\_\+empty\+\_\+strings} & flag of deleteng empty strings\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a41ee77af59f0733f5de6ac75d56d65ff}\label{main_8cpp_a41ee77af59f0733f5de6ac75d56d65ff}} 
+\index{main.\+cpp@{main.\+cpp}!process\+\_\+book@{process\+\_\+book}}
+\index{process\+\_\+book@{process\+\_\+book}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{process\+\_\+book()}{process\_book()}}
+{\footnotesize\ttfamily void process\+\_\+book (\begin{DoxyParamCaption}\item[{char $\ast$}]{book\+\_\+filename,  }\item[{vector$<$ \mbox{\hyperlink{structline}{line}} $>$ $\ast$}]{text\+\_\+lines }\end{DoxyParamCaption})}
+
+Read book from book\+\_\+filename, create lines from text
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em book\+\_\+filename} & path + file name to text \\
+\hline
+\mbox{\tt out}  & {\em text\+\_\+lines} & pointer to lines of text\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a2fd0b549ad62aba1f4ffad882420e77c}\label{main_8cpp_a2fd0b549ad62aba1f4ffad882420e77c}} 
+\index{main.\+cpp@{main.\+cpp}!read\+\_\+from\+\_\+file@{read\+\_\+from\+\_\+file}}
+\index{read\+\_\+from\+\_\+file@{read\+\_\+from\+\_\+file}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{read\+\_\+from\+\_\+file()}{read\_from\_file()}}
+{\footnotesize\ttfamily size\+\_\+t read\+\_\+from\+\_\+file (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename,  }\item[{char $\ast$$\ast$}]{text }\end{DoxyParamCaption})}
+
+Read from file. Save in text.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em filename} & path + file name \\
+\hline
+\mbox{\tt out}  & {\em text} & pointer to text\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+lenght of text 
+\end{DoxyReturn}

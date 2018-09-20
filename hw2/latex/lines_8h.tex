@@ -1,0 +1,71 @@
+\hypertarget{lines_8h}{}\section{D\+:/programming/\+M\+I\+P\+T/diht2018cpp/hw2/lines.h File Reference}
+\label{lines_8h}\index{D\+:/programming/\+M\+I\+P\+T/diht2018cpp/hw2/lines.\+h@{D\+:/programming/\+M\+I\+P\+T/diht2018cpp/hw2/lines.\+h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structline}{line}}
+\begin{DoxyCompactList}\small\item\em Struct line of text\+: string + length of this string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{lines_8h_a785f60860ab4aba18e4df50ec25d6b79}{is\+\_\+punctuation\+\_\+mark}} (char c)
+\item 
+bool \mbox{\hyperlink{lines_8h_a681793628aaec9c981b5fe4aef57e826}{line\+\_\+comp}} (const \mbox{\hyperlink{structline}{line}} \&a, const \mbox{\hyperlink{structline}{line}} \&b)
+\item 
+bool \mbox{\hyperlink{lines_8h_a0c812089296085c81ef252a99d0b1b39}{line\+\_\+rev\+\_\+comp}} (const \mbox{\hyperlink{structline}{line}} \&a, const \mbox{\hyperlink{structline}{line}} \&b)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{lines_8h_a785f60860ab4aba18e4df50ec25d6b79}\label{lines_8h_a785f60860ab4aba18e4df50ec25d6b79}} 
+\index{lines.\+h@{lines.\+h}!is\+\_\+punctuation\+\_\+mark@{is\+\_\+punctuation\+\_\+mark}}
+\index{is\+\_\+punctuation\+\_\+mark@{is\+\_\+punctuation\+\_\+mark}!lines.\+h@{lines.\+h}}
+\subsubsection{\texorpdfstring{is\+\_\+punctuation\+\_\+mark()}{is\_punctuation\_mark()}}
+{\footnotesize\ttfamily bool is\+\_\+punctuation\+\_\+mark (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+Check if char is punctuation mark
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em c} & character\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lines_8h_a681793628aaec9c981b5fe4aef57e826}\label{lines_8h_a681793628aaec9c981b5fe4aef57e826}} 
+\index{lines.\+h@{lines.\+h}!line\+\_\+comp@{line\+\_\+comp}}
+\index{line\+\_\+comp@{line\+\_\+comp}!lines.\+h@{lines.\+h}}
+\subsubsection{\texorpdfstring{line\+\_\+comp()}{line\_comp()}}
+{\footnotesize\ttfamily bool line\+\_\+comp (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structline}{line}} \&}]{a,  }\item[{const \mbox{\hyperlink{structline}{line}} \&}]{b }\end{DoxyParamCaption})}
+
+Compare lines a and b from the beginning
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em a} & reference to line a \\
+\hline
+\mbox{\tt in}  & {\em b} & reference to line b\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a $<$ b 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lines_8h_a0c812089296085c81ef252a99d0b1b39}\label{lines_8h_a0c812089296085c81ef252a99d0b1b39}} 
+\index{lines.\+h@{lines.\+h}!line\+\_\+rev\+\_\+comp@{line\+\_\+rev\+\_\+comp}}
+\index{line\+\_\+rev\+\_\+comp@{line\+\_\+rev\+\_\+comp}!lines.\+h@{lines.\+h}}
+\subsubsection{\texorpdfstring{line\+\_\+rev\+\_\+comp()}{line\_rev\_comp()}}
+{\footnotesize\ttfamily bool line\+\_\+rev\+\_\+comp (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structline}{line}} \&}]{a,  }\item[{const \mbox{\hyperlink{structline}{line}} \&}]{b }\end{DoxyParamCaption})}
+
+Compare lines a and b from the end
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em a} & reference to line a \\
+\hline
+\mbox{\tt in}  & {\em b} & reference to line b\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a $<$ b 
+\end{DoxyReturn}
