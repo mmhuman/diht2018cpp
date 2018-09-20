@@ -6,13 +6,13 @@
 \subsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
-enum \{ \mbox{\hyperlink{main_8cpp_a06fc87d81c62e9abb8790b6e5713c55ba45f4914d27ca97b398b3493a65bb74fc}{E\+\_\+\+I\+N\+P\+UT}}
+enum \{ \mbox{\hyperlink{main_8cpp_adf764cbdea00d65edcd07bb9953ad2b7a45f4914d27ca97b398b3493a65bb74fc}{E\+\_\+\+I\+N\+P\+UT}}
  \}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{main_8cpp_a5d62dd5d2effe44aad22bf934d86595f}{get\+Input}} (double \&a, double \&b, double \&c)
+void \mbox{\hyperlink{main_8cpp_a8d03e17773bf77a7fc18a1789de5d406}{get\+Input}} (double $\ast$a, double $\ast$b, double $\ast$c)
 \item 
 void \mbox{\hyperlink{main_8cpp_a4086c62ecfdd50cb2eafb9bf1fff229e}{output}} (int roots\+\_\+cnt, double x1, double x2)
 \item 
@@ -21,12 +21,12 @@ int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
 
 
 \subsection{Enumeration Type Documentation}
-\mbox{\Hypertarget{main_8cpp_a06fc87d81c62e9abb8790b6e5713c55b}\label{main_8cpp_a06fc87d81c62e9abb8790b6e5713c55b}} 
+\mbox{\Hypertarget{main_8cpp_adf764cbdea00d65edcd07bb9953ad2b7}\label{main_8cpp_adf764cbdea00d65edcd07bb9953ad2b7}} 
 \subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
 {\footnotesize\ttfamily anonymous enum}
 
 \begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+\_\+\+I\+N\+P\+UT@{E\+\_\+\+I\+N\+P\+UT}!main.\+cpp@{main.\+cpp}}\index{main.\+cpp@{main.\+cpp}!E\+\_\+\+I\+N\+P\+UT@{E\+\_\+\+I\+N\+P\+UT}}}\mbox{\Hypertarget{main_8cpp_a06fc87d81c62e9abb8790b6e5713c55ba45f4914d27ca97b398b3493a65bb74fc}\label{main_8cpp_a06fc87d81c62e9abb8790b6e5713c55ba45f4914d27ca97b398b3493a65bb74fc}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{E\+\_\+\+I\+N\+P\+UT@{E\+\_\+\+I\+N\+P\+UT}!main.\+cpp@{main.\+cpp}}\index{main.\+cpp@{main.\+cpp}!E\+\_\+\+I\+N\+P\+UT@{E\+\_\+\+I\+N\+P\+UT}}}\mbox{\Hypertarget{main_8cpp_adf764cbdea00d65edcd07bb9953ad2b7a45f4914d27ca97b398b3493a65bb74fc}\label{main_8cpp_adf764cbdea00d65edcd07bb9953ad2b7a45f4914d27ca97b398b3493a65bb74fc}} 
 E\+\_\+\+I\+N\+P\+UT&\\
 \hline
 
@@ -34,21 +34,21 @@ E\+\_\+\+I\+N\+P\+UT&\\
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{main_8cpp_a5d62dd5d2effe44aad22bf934d86595f}\label{main_8cpp_a5d62dd5d2effe44aad22bf934d86595f}} 
+\mbox{\Hypertarget{main_8cpp_a8d03e17773bf77a7fc18a1789de5d406}\label{main_8cpp_a8d03e17773bf77a7fc18a1789de5d406}} 
 \index{main.\+cpp@{main.\+cpp}!get\+Input@{get\+Input}}
 \index{get\+Input@{get\+Input}!main.\+cpp@{main.\+cpp}}
 \subsubsection{\texorpdfstring{get\+Input()}{getInput()}}
-{\footnotesize\ttfamily void get\+Input (\begin{DoxyParamCaption}\item[{double \&}]{a,  }\item[{double \&}]{b,  }\item[{double \&}]{c }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void get\+Input (\begin{DoxyParamCaption}\item[{double $\ast$}]{a,  }\item[{double $\ast$}]{b,  }\item[{double $\ast$}]{c }\end{DoxyParamCaption})}
 
 Get input from stdin, read coefficients for square equation
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt out}  & {\em a} & reference to a-\/coefficient \\
+\mbox{\tt out}  & {\em a} & pointer to a-\/coefficient \\
 \hline
-\mbox{\tt out}  & {\em b} & reference to b-\/coefficient \\
+\mbox{\tt out}  & {\em b} & pointer to b-\/coefficient \\
 \hline
-\mbox{\tt out}  & {\em c} & reference to c-\/coefficient\\
+\mbox{\tt out}  & {\em c} & pointer to c-\/coefficient\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}

@@ -9,9 +9,9 @@ enum {
 //------------------------------------------------------------------------------
 //! Get input from stdin, read coefficients for square equation
 //!
-//! @param [out]  a reference to a-coefficient
-//! @param [out]  b reference to b-coefficient
-//! @param [out]  c reference to c-coefficient
+//! @param [out]  a pointer to a-coefficient
+//! @param [out]  b pointer to b-coefficient
+//! @param [out]  c pointer to c-coefficient
 //!
 //! @return void
 //------------------------------------------------------------------------------

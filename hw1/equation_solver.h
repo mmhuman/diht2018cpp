@@ -11,7 +11,7 @@ const double EPS = 1e-6;
 //!
 //! @param [in]  a a-coefficient
 //! @param [in]  b b-coefficient
-//! @param [out]  x reference to the root
+//! @param [out]  x pointer to the root
 //!
 //! @return Number of roots
 //!
@@ -34,8 +34,8 @@ int solveLinear(Field a, Field b, Field* x) {
 //! @param [in]  a a-coefficient
 //! @param [in]  b b-coefficient
 //! @param [in]  c c-coefficient
-//! @param [out]  x1 reference to the first root
-//! @param [out]  x2 reference to the second root
+//! @param [out]  x1 pointer to the first root
+//! @param [out]  x2 pointer to the second root
 //!
 //! @return Number of roots
 //!

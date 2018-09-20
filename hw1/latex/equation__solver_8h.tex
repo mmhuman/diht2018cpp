@@ -4,25 +4,30 @@
 \subsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
-enum \{ \mbox{\hyperlink{equation__solver_8h_adf764cbdea00d65edcd07bb9953ad2b7ae4c7f7f9f79caf20d1397f3a5d165602}{S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS}} = 1000000007
+enum \{ \mbox{\hyperlink{equation__solver_8h_a06fc87d81c62e9abb8790b6e5713c55bae4c7f7f9f79caf20d1397f3a5d165602}{S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS}} = 1000000007
  \}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$class Field $>$ }\\int \mbox{\hyperlink{equation__solver_8h_acc4b6e7eda583f0ff99fa2a9650a1a74}{solve\+Linear}} (Field a, Field b, Field \&x)
+{\footnotesize template$<$class Field $>$ }\\int \mbox{\hyperlink{equation__solver_8h_ab3a049d9d990a0c4985656d51d2acb63}{solve\+Linear}} (Field a, Field b, Field $\ast$x)
 \item 
-{\footnotesize template$<$class Field $>$ }\\int \mbox{\hyperlink{equation__solver_8h_ab549c2f82db1539ca03581ec03a148e0}{solve\+Square}} (Field a, Field b, Field c, Field \&x1, Field \&x2)
+{\footnotesize template$<$class Field $>$ }\\int \mbox{\hyperlink{equation__solver_8h_a094d41bbdc5dfb6c4059db7867f51b7c}{solve\+Square}} (Field a, Field b, Field c, Field $\ast$x1, Field $\ast$x2)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const double \mbox{\hyperlink{equation__solver_8h_afe01386a82fedc016455a43c20280a97}{E\+PS}} = 1e-\/6
 \end{DoxyCompactItemize}
 
 
 \subsection{Enumeration Type Documentation}
-\mbox{\Hypertarget{equation__solver_8h_adf764cbdea00d65edcd07bb9953ad2b7}\label{equation__solver_8h_adf764cbdea00d65edcd07bb9953ad2b7}} 
+\mbox{\Hypertarget{equation__solver_8h_a06fc87d81c62e9abb8790b6e5713c55b}\label{equation__solver_8h_a06fc87d81c62e9abb8790b6e5713c55b}} 
 \subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
 {\footnotesize\ttfamily anonymous enum}
 
 \begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS@{S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS}!equation\+\_\+solver.\+h@{equation\+\_\+solver.\+h}}\index{equation\+\_\+solver.\+h@{equation\+\_\+solver.\+h}!S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS@{S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS}}}\mbox{\Hypertarget{equation__solver_8h_adf764cbdea00d65edcd07bb9953ad2b7ae4c7f7f9f79caf20d1397f3a5d165602}\label{equation__solver_8h_adf764cbdea00d65edcd07bb9953ad2b7ae4c7f7f9f79caf20d1397f3a5d165602}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS@{S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS}!equation\+\_\+solver.\+h@{equation\+\_\+solver.\+h}}\index{equation\+\_\+solver.\+h@{equation\+\_\+solver.\+h}!S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS@{S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS}}}\mbox{\Hypertarget{equation__solver_8h_a06fc87d81c62e9abb8790b6e5713c55bae4c7f7f9f79caf20d1397f3a5d165602}\label{equation__solver_8h_a06fc87d81c62e9abb8790b6e5713c55bae4c7f7f9f79caf20d1397f3a5d165602}} 
 S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS&\\
 \hline
 
@@ -30,12 +35,12 @@ S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS&\\
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{equation__solver_8h_acc4b6e7eda583f0ff99fa2a9650a1a74}\label{equation__solver_8h_acc4b6e7eda583f0ff99fa2a9650a1a74}} 
+\mbox{\Hypertarget{equation__solver_8h_ab3a049d9d990a0c4985656d51d2acb63}\label{equation__solver_8h_ab3a049d9d990a0c4985656d51d2acb63}} 
 \index{equation\+\_\+solver.\+h@{equation\+\_\+solver.\+h}!solve\+Linear@{solve\+Linear}}
 \index{solve\+Linear@{solve\+Linear}!equation\+\_\+solver.\+h@{equation\+\_\+solver.\+h}}
 \subsubsection{\texorpdfstring{solve\+Linear()}{solveLinear()}}
 {\footnotesize\ttfamily template$<$class Field $>$ \\
-int solve\+Linear (\begin{DoxyParamCaption}\item[{Field}]{a,  }\item[{Field}]{b,  }\item[{Field \&}]{x }\end{DoxyParamCaption})}
+int solve\+Linear (\begin{DoxyParamCaption}\item[{Field}]{a,  }\item[{Field}]{b,  }\item[{Field $\ast$}]{x }\end{DoxyParamCaption})}
 
 Solve linear equation ax + b = 0
 
@@ -45,7 +50,7 @@ Solve linear equation ax + b = 0
 \hline
 \mbox{\tt in}  & {\em b} & b-\/coefficient \\
 \hline
-\mbox{\tt out}  & {\em x} & reference to the root\\
+\mbox{\tt out}  & {\em x} & pointer to the root\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -54,12 +59,12 @@ Number of roots
 \begin{DoxyNote}{Note}
 If there are infinite number of roots return S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS 
 \end{DoxyNote}
-\mbox{\Hypertarget{equation__solver_8h_ab549c2f82db1539ca03581ec03a148e0}\label{equation__solver_8h_ab549c2f82db1539ca03581ec03a148e0}} 
+\mbox{\Hypertarget{equation__solver_8h_a094d41bbdc5dfb6c4059db7867f51b7c}\label{equation__solver_8h_a094d41bbdc5dfb6c4059db7867f51b7c}} 
 \index{equation\+\_\+solver.\+h@{equation\+\_\+solver.\+h}!solve\+Square@{solve\+Square}}
 \index{solve\+Square@{solve\+Square}!equation\+\_\+solver.\+h@{equation\+\_\+solver.\+h}}
 \subsubsection{\texorpdfstring{solve\+Square()}{solveSquare()}}
 {\footnotesize\ttfamily template$<$class Field $>$ \\
-int solve\+Square (\begin{DoxyParamCaption}\item[{Field}]{a,  }\item[{Field}]{b,  }\item[{Field}]{c,  }\item[{Field \&}]{x1,  }\item[{Field \&}]{x2 }\end{DoxyParamCaption})}
+int solve\+Square (\begin{DoxyParamCaption}\item[{Field}]{a,  }\item[{Field}]{b,  }\item[{Field}]{c,  }\item[{Field $\ast$}]{x1,  }\item[{Field $\ast$}]{x2 }\end{DoxyParamCaption})}
 
 Solve square equation ax$^\wedge$2 + bx + c = 0
 
@@ -71,9 +76,9 @@ Solve square equation ax$^\wedge$2 + bx + c = 0
 \hline
 \mbox{\tt in}  & {\em c} & c-\/coefficient \\
 \hline
-\mbox{\tt out}  & {\em x1} & reference to the first root \\
+\mbox{\tt out}  & {\em x1} & pointer to the first root \\
 \hline
-\mbox{\tt out}  & {\em x2} & reference to the second root\\
+\mbox{\tt out}  & {\em x2} & pointer to the second root\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -82,3 +87,12 @@ Number of roots
 \begin{DoxyNote}{Note}
 If there are infinite number of roots return S\+S\+\_\+\+I\+N\+F\+\_\+\+R\+O\+O\+TS 
 \end{DoxyNote}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{equation__solver_8h_afe01386a82fedc016455a43c20280a97}\label{equation__solver_8h_afe01386a82fedc016455a43c20280a97}} 
+\index{equation\+\_\+solver.\+h@{equation\+\_\+solver.\+h}!E\+PS@{E\+PS}}
+\index{E\+PS@{E\+PS}!equation\+\_\+solver.\+h@{equation\+\_\+solver.\+h}}
+\subsubsection{\texorpdfstring{E\+PS}{EPS}}
+{\footnotesize\ttfamily const double E\+PS = 1e-\/6}
+
