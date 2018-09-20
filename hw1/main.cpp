@@ -16,9 +16,10 @@ enum {
 //! @return void
 //------------------------------------------------------------------------------
 
-void getInput(double& a, double& b, double& c) {
+void getInput(double* a, double* b, double* c) {
+	assert(a && b && c);
 	printf("Enter a, b, c\n");
-	if (scanf("%lf %lf %lf", &a, &b, &c) != 3) {
+	if (scanf("%lf %lf %lf", a, b, c) != 3) {
 		printf("Wrong input\n");
 		exit(E_INPUT);
 	}
@@ -48,9 +49,9 @@ void output(int roots_cnt, double x1, double x2) {
 
 int main() {
 	double a, b, c;
-	getInput(a, b, c);
+	getInput(&a, &b, &c);
 	double x1, x2;
-	int roots_cnt = solveSquare(a, b, c, x1, x2);
+	int roots_cnt = solveSquare(a, b, c, &x1, &x2);
 	output(roots_cnt, x1, x2);
 	return 0;
 }

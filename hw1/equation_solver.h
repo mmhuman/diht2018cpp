@@ -4,6 +4,8 @@ enum {
 	SS_INF_ROOTS = 1000000007
 };
 
+const double EPS = 1e-6;
+
 //------------------------------------------------------------------------------
 //! Solve linear equation ax + b = 0
 //!
@@ -17,11 +19,12 @@ enum {
 //------------------------------------------------------------------------------
 
 template <class Field>
-int solveLinear(Field a, Field b, Field& x) {
-	if (a == 0) {
-		return (b == 0) ? SS_INF_ROOTS : 0;
+int solveLinear(Field a, Field b, Field* x) {
+	assert(x);
+	if (abs(a) < EPS) {
+		return (abs(b) < EPS) ? SS_INF_ROOTS : 0;
 	}
-	x = -b / a;
+	*x = -b / a;
 	return 1;
 }
 
@@ -40,24 +43,20 @@ int solveLinear(Field a, Field b, Field& x) {
 //------------------------------------------------------------------------------
 
 template <class Field>
-int solveSquare(Field a, Field b, Field c, Field& x1, Field& x2) {
+int solveSquare(Field a, Field b, Field c, Field* x1, Field* x2) {
 	assert(std::isfinite(a) && std::isfinite(b) && std::isfinite(c));
-	x1 = (x2 = 0) + 1;
-	assert(x1 != x2);
+	assert(x1 && x2 && x1 != x2);
 
-	if (a == 0) {
+	if (abs(a) < EPS) {
 		int result = solveLinear(b, c, x1);
-		x2 = x1;
+		*x2 = *x1;
 		return result;
 	}
 
 	Field discriminant = b * b - 4 * a * c;
 	if (discriminant < 0)
 		return 0;
-	x1 = (-b - std::sqrt(discriminant)) / (2 * a);
-	x2 = (-b + std::sqrt(discriminant)) / (2 * a);
-	if (discriminant == 0)
-		return 1;
-	else
-		return 2;
+	*x1 = (-b - std::sqrt(discriminant)) / (2 * a);
+	*x2 = (-b + std::sqrt(discriminant)) / (2 * a);
+	return 1 + (discriminant > EPS);
 }
